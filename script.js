@@ -233,3 +233,31 @@
             clearInterval(messageInterval);
         });
     
+        const modal = document.getElementById('videoModal');
+const openBtn = document.getElementById('openModalBtn');
+const closeBtn = document.getElementById('closeModalBtn');
+
+openBtn.addEventListener('click', () => {
+  modal.style.display = 'flex';
+});
+
+closeBtn.addEventListener('click', () => {
+  modal.style.display = 'none';
+  // stoppe la vidéo à la fermeture
+  const video = modal.querySelector('video');
+  if (video) {
+    video.pause();
+    video.currentTime = 0;
+  }
+});
+
+window.addEventListener('click', (e) => {
+  if (e.target === modal) {
+    modal.style.display = 'none';
+    const video = modal.querySelector('video');
+    if (video) {
+      video.pause();
+      video.currentTime = 0;
+    }
+  }
+});

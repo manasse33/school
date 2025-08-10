@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEXUS Academy - L'Excellence Redéfinie</title>
+    <title>ORRYS Academy - L'Excellence Redéfinie</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <!-- Écran de chargement -->
     <div class="loading-screen">
-        <div class="loading-text">NEXUS ACADEMY</div>
+        <div class="loading-text">ORRYS ACADEMY</div>
     </div>
 
     <!-- Navigation -->
    <header>
      <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">NEXUS</div>
+            <div class="logo">ORRYS</div>
             <ul class="nav-links">
                 <li><a href="#accueil">Accueil</a></li>
                 <li><a href="#programmes">Programmes</a></li>
@@ -33,7 +34,7 @@
         <div class="particles"></div>
         <div class="hero-content">
             <p class="hero-subtitle">EXCELLENCE • INNOVATION • FUTUR</p>
-            <h1 class="hero-title">NEXUS ACADEMY</h1>
+            <h1 class="hero-title">ORRYS ACADEMY</h1>
             <p class="hero-description">
                 Redéfinir l'éducation à travers l'innovation technologique, 
                 l'excellence pédagogique et une vision futuriste de l'apprentissage.
@@ -45,7 +46,7 @@
                 </a>
                 <a href="#" class="btn-primary secondary">
                     <span>Visite virtuelle</span>
-                    <span>🎬</span>
+                    <span><i class="fa-solid fa-video"></i></span>
                 </a>
             </div>
         </div>
@@ -159,36 +160,36 @@
             <div class="testimonials-grid">
                 <div class="testimonial-card">
                     <p class="testimonial-text">
-                        NEXUS Academy a révolutionné ma vision de l'éducation. L'approche innovante et les technologies de pointe m'ont permis de développer des compétences exceptionnelles qui font aujourd'hui ma différence.
+                        ORRYS Academy a révolutionné ma vision de l'éducation. L'approche innovante et les technologies de pointe m'ont permis de développer des compétences exceptionnelles qui font aujourd'hui ma différence.
                     </p>
                     <div class="testimonial-author">
-                        <div class="author-avatar">S</div>
+                        <div class="author-avatar">M</div>
                         <div class="author-info">
-                            <h4>Sarah Martinez</h4>
+                            <h4>Manasssé AFOULA</h4>
                             <p>CEO, TechVision Inc.</p>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-card">
                     <p class="testimonial-text">
-                        L'environnement d'apprentissage unique de NEXUS m'a poussé à dépasser mes limites. Les projets collaboratifs et l'encadrement personnalisé ont façonné mon succès professionnel.
+                        L'environnement d'apprentissage unique de ORRYS m'a poussé à dépasser mes limites. Les projets collaboratifs et l'encadrement personnalisé ont façonné mon succès professionnel.
                     </p>
                     <div class="testimonial-author">
-                        <div class="author-avatar">A</div>
+                        <div class="author-avatar">M</div>
                         <div class="author-info">
-                            <h4>Alexandre Dubois</h4>
+                            <h4>Manasssé AFOULA</h4>
                             <p>Directeur Innovation, EuroTech</p>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-card">
                     <p class="testimonial-text">
-                        Plus qu'une école, NEXUS est un catalyseur de talents. L'excellence académique combinée à une vision futuriste prépare vraiment aux défis de demain.
+                        Plus qu'une école, ORRYS est un catalyseur de talents. L'excellence académique combinée à une vision futuriste prépare vraiment aux défis de demain.
                     </p>
                     <div class="testimonial-author">
-                        <div class="author-avatar">L</div>
+                        <div class="author-avatar">M</div>
                         <div class="author-info">
-                            <h4>Laura Chen</h4>
+                            <h4>Manasssé AFOULA</h4>
                             <p>Architecte IA, Google DeepMind</p>
                         </div>
                     </div>
@@ -196,33 +197,45 @@
             </div>
         </div>
     </section>
-
-    <!-- SECTION GALERIE -->
-<section class="gallery">
+    <section id="gallery" class="gallery-section">
   <div class="container">
-    <h2 class="gallery-title">Galerie</h2>
+    <h2 class="section-title">Galerie</h2>
     <div class="gallery-grid">
       <div class="gallery-item">
-        <img src="imgs/photo1.jpg" alt="Photo 1">
+        <img src="images/img1.jpg" alt="Image 1" />
+        <p class="image-description">Description courte 1</p>
       </div>
       <div class="gallery-item">
-        <img src="imgs/photo2.jpg" alt="Photo 2">
+        <img src="images/img1.jpg" alt="Image 2" />
+        <p class="image-description">Description courte 2</p>
       </div>
       <div class="gallery-item">
-        <img src="imgs/photo3.jpg" alt="Photo 3">
+        <img src="images/img1.jpg" alt="Image 3" />
+        <p class="image-description">Description courte 3</p>
       </div>
       <div class="gallery-item">
-        <img src="imgs/photo4.jpg" alt="Photo 4">
+        <img src="images/img1.jpg" alt="Image 4" />
+        <p class="image-description">Description courte 4</p>
       </div>
-      <div class="gallery-item">
-        <img src="imgs/photo5.jpg" alt="Photo 5">
-      </div>
-      <div class="gallery-item">
-        <img src="imgs/photo6.jpg" alt="Photo 6">
-      </div>
+      <!-- Ajoute autant d'images que tu veux -->
     </div>
   </div>
 </section>
+
+
+<!-- Bouton visite virtuelle -->
+<button id="openModalBtn" class="visit-virtual-btn">Visite Virtuelle</button>
+
+<!-- Modal -->
+<div id="videoModal" class="modal">
+  <div class="modal-content">
+    <span id="closeModalBtn" class="close">&times;</span>
+    <video controls width="100%" height="auto" autoplay>
+      <source src="URL_DE_TA_VIDEO.mp4" type="video/mp4" />
+      Votre navigateur ne supporte pas la lecture vidéo.
+    </video>
+  </div>
+</div>
 
 
     <!-- Footer -->
@@ -230,13 +243,13 @@
         <div class="footer-container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>NEXUS Academy</h3>
+                    <h3>ORRYS Academy</h3>
                     <p>Redéfinir l'éducation à travers l'innovation, l'excellence et une vision futuriste de l'apprentissage pour former les leaders de demain.</p>
                     <div class="social-links">
-                        <a href="#" class="social-link">📘</a>
-                        <a href="#" class="social-link">🐦</a>
-                        <a href="#" class="social-link">💼</a>
-                        <a href="#" class="social-link">📸</a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
                 <div class="footer-section">
@@ -255,13 +268,13 @@
                 </div>
                 <div class="footer-section">
                     <h3>Contact</h3>
-                    <p>📍 1 Avenue de l'Excellence<br>75001 Paris, France</p>
-                    <p>📞 +33 1 42 86 95 00</p>
-                    <p>✉️ contact@nexusacademy.fr</p>
+                    <p><i class="fa-solid fa-location-dot"></i> <br> Brazzaville, Congo</p>
+                    <p><i class="fa-solid fa-phone"></i> +242067571100</p>
+                    <p>✉️ contact@ORRYSacademy.com</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 NEXUS Academy. Tous droits réservés. | Excellence · Innovation · Futur</p>
+                <p>&copy; 2025 ORRYS Academy. Tous droits réservés. | Excellence · Innovation · Futur</p>
             </div>
         </div>
     </footer>
