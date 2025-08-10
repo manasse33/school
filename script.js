@@ -243,7 +243,7 @@ openBtn.addEventListener('click', () => {
 
 closeBtn.addEventListener('click', () => {
   modal.style.display = 'none';
-  // stoppe la vidéo à la fermeture
+  
   const video = modal.querySelector('video');
   if (video) {
     video.pause();
