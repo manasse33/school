@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Login -->
+<div class="login-container">
+  <h2>Connexion Élève</h2>
+  <form id="loginForm">
+    <label for="username">Nom d'utilisateur :</label>
+    <input type="text" id="username" required>
+
+    <label for="password">Mot de passe :</label>
+    <input type="password" id="password" required>
+
+    <button type="submit">Se connecter</button>
+  </form>
+  <p id="loginError" style="color:red; display:none;">Identifiants incorrects</p>
+</div>
+
+<!-- CSS -->
+<style>
+.login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 25px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.login-container input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.login-container button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.login-container button:hover {
+  background-color: #45a049;
+}
+</style>
+
+<!-- JS -->
+<script>
+const loginForm = document.getElementById("loginForm");
+const loginError = document.getElementById("loginError");
+
+// Exemple simple : les identifiants sont "eleve" / "1234"
+loginForm.addEventListener("submit", function(e) {
+  e.preventDefault();
+  const username = document.getElementById("username").value;
+  const password = document.getElementById("password").value;
+
+  if(username === "eleve" && password === "1234") {
+    // redirection vers zone élèves
+    window.location.href = "zone-eleves.html";
+  } else {
+    loginError.style.display = "block";
+  }
+});
+</script>
+
+</body>
+</html>

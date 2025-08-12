@@ -1,5 +1,5 @@
 
-        // Mobile menu toggle
+        
         const menuToggle = document.getElementById('menuToggle');
         const navLinks = document.getElementById('navLinks');
 
@@ -7,7 +7,7 @@
             navLinks.classList.toggle('active');
         });
 
-        // Smooth scrolling
+        
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -23,13 +23,11 @@
             });
         });
 
-        // Form submission
         document.querySelector('form').addEventListener('submit', (e) => {
             e.preventDefault();
             alert('Merci pour votre message ! Nous vous recontacterons bientôt.');
         });
 
-        // Gallery Modal Functions
         function openModal(modalId) {
             const modal = document.getElementById('galleryModal');
             const caption = document.getElementById('modalCaption');
@@ -51,14 +49,13 @@
             document.getElementById('galleryModal').style.display = 'none';
         }
 
-        // Close modal when clicking outside
         document.getElementById('galleryModal').addEventListener('click', (e) => {
             if (e.target.id === 'galleryModal') {
                 closeModal();
             }
         });
 
-        // Close modal with Escape key
+       
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape') {
                 closeModal();

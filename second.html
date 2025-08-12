@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscriptions & Programmes - École Excellence</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <div class="logo">École Excellence</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="second.html">Details</a></li>
+                <!-- <li><a href="#programs">Formations</a></li>
+                <li><a href="#gallery">Galerie</a></li> -->
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+     
+    <section class="hero" id="accueil">
+        <div class="hero-content">
+            <h1>Formez-vous pour l'Excellence</h1>
+            <p>Notre objectif est d’offrir à chaque élève un parcours éducatif complet et harmonieux, de la petite enfance à la préparation aux études supérieures, dans un environnement sécurisé et stimulant.</p>
+            <a href="#contact" class="cta-button">Nous Contacter</a>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Inscriptions & Programmes</h2>
+
+        <!-- Boutons de filtre -->
+        <div class="filter-buttons">
+            <button class="active" data-target="calendrier">Calendrier</button>
+            <button data-target="programmes">Programmes</button>
+            <button data-target="tarifs">Tarifs</button>
+        </div>
+
+        <!-- CALENDRIER -->
+        <div id="calendrier" class="filter-section active">
+            <h3>Calendrier des Inscriptions & Cours</h3>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Période</th>
+                            <th>Dates</th>
+                            <th>Remarques</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Inscriptions</td>
+                            <td>1er Juin - 30 Août</td>
+                            <td>Places limitées par classe</td>
+                        </tr>
+                        <tr>
+                            <td>Rentrée Scolaire</td>
+                            <td>5 Septembre</td>
+                            <td>Accueil des nouveaux élèves</td>
+                        </tr>
+                        <tr>
+                            <td>Vacances de Noël</td>
+                            <td>20 Décembre - 5 Janvier</td>
+                            <td>Reprise des cours le 6 Janvier</td>
+                        </tr>
+                        <tr>
+                            <td>Fin d’Année</td>
+                            <td>15 Juin</td>
+                            <td>Cérémonie de remise des diplômes</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- PROGRAMMES -->
+        <div id="programmes" class="filter-section">
+            <h3>Programmes Détaillés</h3>
+            <div class="programs-grid">
+                <div class="program-card">
+                    <h4>Primaire</h4>
+                    <ul>
+                        <li>Lecture & Écriture</li>
+                        <li>Mathématiques de base</li>
+                        <li>Sciences & Découverte</li>
+                        <li>Arts plastiques & Musique</li>
+                    </ul>
+                </div>
+                <div class="program-card">
+                    <h4>Collège</h4>
+                    <ul>
+                        <li>Français & Littérature</li>
+                        <li>Mathématiques avancées</li>
+                        <li>Physique & Chimie</li>
+                        <li>Langues étrangères</li>
+                    </ul>
+                </div>
+                <div class="program-card">
+                    <h4>Lycée</h4>
+                    <ul>
+                        <li>Filière Scientifique : Maths, Physique, SVT</li>
+                        <li>Filière Littéraire : Philosophie, Histoire</li>
+                        <li>Technologie & Informatique</li>
+                        <li>Préparation aux examens</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- TARIFS -->
+       <!-- TARIFS -->
+<!-- TARIFS -->
+<div id="tarifs" class="filter-section">
+    <h3>Tarifs d’Inscription & Mensuels</h3>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Niveau</th>
+                    <th>Frais d’Inscription</th>
+                    <th>Mensualité</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Primaire</td>
+                    <td>25 000 XAF</td>
+                    <td>15 000 XAF</td>
+                </tr>
+                <tr>
+                    <td>Collège</td>
+                    <td>30 000 XAF</td>
+                    <td>20 000 XAF</td>
+                </tr>
+                <tr>
+                    <td>Lycée</td>
+                    <td>35 000 XAF</td>
+                    <td>25 000 XAF</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- DOCUMENTS À FOURNIR -->
+    <div class="documents-inscription">
+        <h4>📄 Documents à Fournir</h4>
+        <ul>
+            <li><span>🪪</span> Copie de l’acte de naissance ou pièce d’identité</li>
+            <li><span>📄</span> Bulletins scolaires des deux dernières années</li>
+            <li><span>🖼️</span> 2 photos d’identité récentes</li>
+            <li><span>🏠</span> Justificatif de domicile</li>
+            <li><span>💉</span> Carnet de vaccination (pages obligatoires)</li>
+        </ul>
+    </div>
+
+    <!-- BOUTON CLASSES D'EXAMENS -->
+    <div style="margin-top: 1.5rem; text-align: center;">
+        <button id="examBtn" class="cta-button">Pour les classes d’examens</button>
+    </div>
+</div>
+
+<!-- MODAL CLASSES D'EXAMENS -->
+<div id="examModal" class="modal">
+    <div class="modal-content exam-modal">
+        <span class="close-modal" id="closeExamModal">&times;</span>
+        <h3>Informations pour les Classes d’Examens</h3>
+        
+        <div class="exam-section">
+            <h4>📘 CEPE</h4>
+            <p><strong>Frais :</strong> 40 000 XAF</p>
+            <ul>
+                <li>Copie de l’acte de naissance</li>
+                <li>2 photos d’identité</li>
+                <li>Bulletins de l’année précédente</li>
+            </ul>
+
+            <a href="documents_examen.pdf" download class="download-btn">
+                    📄 Télécharger la liste PDF
+                </a>
+        </div>
+
+        <div class="exam-section">
+            <h4>📗 BEPC</h4>
+            <p><strong>Frais :</strong> 50 000 XAF</p>
+            <ul>
+                <li>Copie de l’acte de naissance</li>
+                <li>3 photos d’identité</li>
+                <li>Bulletins des deux dernières années</li>
+            </ul>
+               <a href="documents_examen.pdf" download class="download-btn">
+                    📄 Télécharger la liste PDF
+                </a>
+        </div>
+
+        <div class="exam-section">
+            <h4>📙 BAC</h4>
+            <p><strong>Frais :</strong> 60 000 XAF</p>
+            <ul>
+                <li>Copie légalisée de l’acte de naissance</li>
+                <li>4 photos d’identité</li>
+                <li>Bulletins des deux dernières années</li>
+                <li>Relevé de notes officiel</li>
+            </ul>
+
+            <a href="documents_examen.pdf" download class="download-btn">
+                    📄 Télécharger la liste PDF
+                </a>
+        </div>
+    </div>
+</div>
+
+
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 École Excellence. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        // Gestion des filtres
+        const buttons = document.querySelectorAll('.filter-buttons button');
+        const sections = document.querySelectorAll('.filter-section');
+
+        buttons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Retirer active des boutons
+                buttons.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                // Afficher la bonne section
+                const target = btn.getAttribute('data-target');
+                sections.forEach(sec => {
+                    sec.classList.remove('active');
+                    if(sec.id === target) {
+                        sec.classList.add('active');
+                    }
+                });
+            });
+        });
+
+        // Gestion modal examens
+const examBtn = document.getElementById('examBtn');
+const examModal = document.getElementById('examModal');
+const closeExamModal = document.getElementById('closeExamModal');
+
+examBtn.addEventListener('click', () => {
+    examModal.style.display = 'flex';
+});
+
+closeExamModal.addEventListener('click', () => {
+    examModal.style.display = 'none';
+});
+
+window.addEventListener('click', (e) => {
+    if(e.target === examModal) {
+        examModal.style.display = 'none';
+    }
+});
+
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
