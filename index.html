@@ -3,282 +3,221 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ORRYS Academy - L'Excellence Redéfinie</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>École Excellence - Formation d'Excellence</title> 
+    <link rel="stylesheet" href="style.css">   
+   
 </head>
 <body>
-    <!-- Écran de chargement -->
-    <div class="loading-screen">
-        <div class="loading-text">ORRYS ACADEMY</div>
-    </div>
-
-    <!-- Navigation -->
-   <header>
-     <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">ORRYS</div>
-            <ul class="nav-links">
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">École Excellence</div>
+            <ul class="nav-links" id="navLinks">
                 <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#programmes">Programmes</a></li>
-                <li><a href="#temoignages">Témoignages</a></li>
+                <li><a href="#about">À Propos</a></li>
+                <li><a href="#programs">Formations</a></li>
+                <li><a href="#gallery">Galerie</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="#" class="nav-cta">Inscription</a></li>
             </ul>
-        </div>
-    </nav>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
 
-   </header>
     <!-- Hero Section -->
-    <section id="accueil" class="hero">
-        <div class="particles"></div>
+    <section class="hero" id="accueil">
         <div class="hero-content">
-            <p class="hero-subtitle">EXCELLENCE • INNOVATION • FUTUR</p>
-            <h1 class="hero-title">ORRYS ACADEMY</h1>
-            <p class="hero-description">
-                Redéfinir l'éducation à travers l'innovation technologique, 
-                l'excellence pédagogique et une vision futuriste de l'apprentissage.
-            </p>
-            <div class="hero-buttons">
-                <a href="#programmes" class="btn-primary primary">
-                    <span>Explorer nos programmes</span>
-                    <span>→</span>
-                </a>
-                <a href="#" class="btn-primary secondary">
-                    <span id=""><button id="openModalBtn" >Visite Virtuelle</button></span>
-                    <span><i class="fa-solid fa-video"></i></span>
-                </a>
+            <h1>Formez-vous pour l'Excellence</h1>
+            <p>Notre école offre des formations de qualité supérieure avec un accompagnement personnalisé pour votre réussite professionnelle.</p>
+            <a href="#contact" class="cta-button">Nous Contacter</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <h2>À Propos de Notre École</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Notre Mission</h3>
+                <p>Depuis plus de 20 ans, notre école s'engage à fournir une éducation de qualité exceptionnelle. Nous préparons nos étudiants aux défis du monde professionnel avec des méthodes pédagogiques innovantes et un encadrement personnalisé.</p>
+                
+                <p>Notre équipe d'enseignants qualifiés et notre infrastructure moderne garantissent un environnement d'apprentissage optimal pour tous nos étudiants.</p>
+            </div>
+            <div class="about-image">
+                <!-- [Image de l'école] -->
             </div>
         </div>
     </section>
 
-    <!-- Section Statistiques -->
-    <section class="stats-section scroll-reveal">
-        <div class="stats-container">
-            <div class="section-header">
-                <p class="section-subtitle">NOS RÉSULTATS</p>
-                <h2 class="section-title">L'Excellence en Chiffres</h2>
+    <!-- Programs Section -->
+    <section class="section programs" id="programs">
+        <h2>Nos Formations</h2>
+        <div class="programs-grid">
+            <div class="program-card">
+                <h3>Primaire</h3>
+                <p>Le primaire est le premier cycle de l’enseignement, généralement destiné aux enfants de 6 à 11 ans. Il pose les bases de la lecture, de l’écriture, du calcul, ainsi que des connaissances fondamentales en sciences, histoire, géographie et arts. C’est aussi une étape où l’enfant développe ses compétences sociales et son autonomie.</p>
             </div>
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-number">98%</div>
-                    <div class="stat-label">Taux de Réussite</div>
+            <div class="program-card">
+                <h3>Collège</h3>
+                <p>
+                  Le collège est le cycle d’enseignement qui suit le primaire, accueillant les élèves de 11 à 15 ans. Il approfondit les notions apprises à l’école primaire et introduit des matières plus spécialisées comme la physique, la technologie, ou encore les langues étrangères. Cette étape prépare les élèves à la suite de leur parcours scolaire, tout en favorisant l’esprit critique et l’organisation.</p>
+            </div>
+            <div class="program-card">
+                <h3>Lycée</h3>
+                <p>Le lycée est le dernier cycle de l’enseignement secondaire, destiné aux jeunes de 15 à 18 ans. Il propose plusieurs filières (générale, technologique, professionnelle) permettant aux élèves de se préparer soit aux études supérieures, soit à la vie active. C’est une période charnière où l’élève affine ses choix d’orientation et développe une vision plus concrète de son avenir.</p>
+            </div>
+            <!-- <div class="program-card">
+                <h3>Ressources Humaines</h3>
+                <p>Gestion du personnel, droit du travail et développement des compétences.</p>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="section stats">
+        <h2>Nos Résultats</h2>
+        <div class="stats-grid">
+            <div class="stat-item">
+                <span class="stat-number">95%</span>
+                <div class="stat-label">Taux de Réussite</div>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">2000+</span>
+                <div class="stat-label">Diplômés</div>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">25</span>
+                <div class="stat-label">Années d'Expérience</div>
+            </div>
+            <!-- <div class="stat-item">
+                <span class="stat-number">85%</span>
+                <div class="stat-label">Insertion Professionnelle</div>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section gallery" id="gallery">
+        <h2>Galerie Photos</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item" onclick="openModal('modal1')">
+                <div class="gallery-placeholder">
+                    <img src="images/img1.jpg" alt="">
                 </div>
-                <div class="stat-card">
-                    <div class="stat-number">2K+</div>
-                    <div class="stat-label">Étudiants Diplômés</div>
+                <div class="gallery-overlay">
+                    <h4>Salles de Classe</h4>
+                    <p>Espaces d'apprentissage modernes et technologiques</p>
                 </div>
-                <div class="stat-card">
-                    <div class="stat-number">150+</div>
-                    <div class="stat-label">Enseignants Experts</div>
+            </div>
+            <div class="gallery-item" onclick="openModal('modal2')">
+                <div class="gallery-placeholder">
+                   <img src="images/img1.jpg" alt="">
                 </div>
-                <div class="stat-card">
-                    <div class="stat-number">25</div>
-                    <div class="stat-label">Années d'Excellence</div>
+                <div class="gallery-overlay">
+                    <h4>Laboratoire Informatique</h4>
+                    <p>Équipements informatiques de pointe pour la formation</p>
+                </div>
+            </div>
+            <div class="gallery-item" onclick="openModal('modal3')">
+                <div class="gallery-placeholder">
+                    <img src="images/img1.jpg" alt="">
+                </div>
+                <div class="gallery-overlay">
+                    <h4>Bibliothèque</h4>
+                    <p>Centre de ressources et espace d'étude calme</p>
+                </div>
+            </div>
+            <div class="gallery-item" onclick="openModal('modal4')">
+                <div class="gallery-placeholder">
+                   <img src="images/img1.jpg" alt="">
+                </div>
+                <div class="gallery-overlay">
+                    <h4>Cérémonie de Diplômes</h4>
+                    <p>Moments de fierté et de réussite de nos étudiants</p>
+                </div>
+            </div>
+            <div class="gallery-item" onclick="openModal('modal5')">
+                <div class="gallery-placeholder">
+                   <img src="images/img1.jpg" alt="">
+                </div>
+                <div class="gallery-overlay">
+                    <h4>Travaux Pratiques</h4>
+                    <p>Apprentissage collaboratif et mise en pratique</p>
+                </div>
+            </div>
+            <div class="gallery-item" onclick="openModal('modal6')">
+                <div class="gallery-placeholder">
+                   <img src="images/img1.jpg" alt="">
+                </div>
+                <div class="gallery-overlay">
+                    <h4>Campus</h4>
+                    <p>Notre magnifique campus au cœur de Brazzaville</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section Programmes -->
-    <section id="programmes" class="programs-section scroll-reveal">
-        <div class="programs-container">
-            <div class="section-header">
-                <p class="section-subtitle">FORMATION D'ÉLITE</p>
-                <h2 class="section-title">Programmes d'Excellence</h2>
-                <p class="section-description">
-                    Des cursus révolutionnaires conçus pour former les leaders de demain avec une approche pédagogique unique et des technologies de pointe.
-                </p>
-            </div>
-            <div class="programs-grid">
-                <div class="program-card">
-                    <div class="program-icon">🎓</div>
-                    <h3 class="program-title">Excellence Académique</h3>
-                    <p class="program-description">
-                        Un programme d'enseignement supérieur alliant rigueur académique et innovation pédagogique pour développer l'esprit critique et la créativité.
-                    </p>
-                    <ul class="program-features">
-                        <li>Classes interactives haute technologie</li>
-                        <li>Ratio enseignant/étudiant optimisé</li>
-                        <li>Méthodes pédagogiques innovantes</li>
-                        <li>Suivi personnalisé individuel</li>
-                    </ul>
-                </div>
-                <div class="program-card">
-                    <div class="program-icon">💻</div>
-                    <h3 class="program-title">Technologies Émergentes</h3>
-                    <p class="program-description">
-                        Formation aux technologies du futur : IA, robotique, blockchain, réalité virtuelle et programmation avancée pour préparer aux métiers de demain.
-                    </p>
-                    <ul class="program-features">
-                        <li>Laboratoires équipés dernière génération</li>
-                        <li>Projets avec entreprises tech leaders</li>
-                        <li>Certifications professionnelles</li>
-                        <li>Incubateur de startups intégré</li>
-                    </ul>
-                </div>
-                <div class="program-card">
-                    <div class="program-icon">🌍</div>
-                    <h3 class="program-title">Leadership International</h3>
-                    <p class="program-description">
-                        Développement des compétences de leadership avec une perspective globale, échanges internationaux et projets multiculturels.
-                    </p>
-                    <ul class="program-features">
-                        <li>Échanges avec universités partenaires</li>
-                        <li>Simulation de Nations Unies</li>
-                        <li>Stages à l'international</li>
-                        <li>Mentorat par dirigeants reconnus</li>
-                    </ul>
-                </div>
-                <div class="program-card">
-                    <div class="program-icon">🎨</div>
-                    <h3 class="program-title">Arts & Innovation</h3>
-                    <p class="program-description">
-                        Fusion entre créativité artistique et innovation technologique pour développer une approche unique de la création et du design.
-                    </p>
-                    <ul class="program-features">
-                        <li>Studios de création multimédia</li>
-                        <li>Collaborations avec artistes renommés</li>
-                        <li>Expositions et performances</li>
-                        <li>Design thinking appliqué</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section Témoignages -->
-    <section id="temoignages" class="testimonials-section scroll-reveal">
-        <div class="testimonials-container">
-            <div class="section-header">
-                <p class="section-subtitle">TÉMOIGNAGES</p>
-                <h2 class="section-title">Ils Ont Vécu l'Excellence</h2>
-                <p class="section-description">
-                    Découvrez les parcours inspirants de nos anciens étudiants qui excellent aujourd'hui dans leurs domaines respectifs.
-                </p>
-            </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <p class="testimonial-text">
-                        ORRYS Academy a révolutionné ma vision de l'éducation. L'approche innovante et les technologies de pointe m'ont permis de développer des compétences exceptionnelles qui font aujourd'hui ma différence.
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">M</div>
-                        <div class="author-info">
-                            <h4>Manasssé AFOULA</h4>
-                            <p>CEO, TechVision Inc.</p>
-                        </div>
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <h2>Contactez-Nous</h2>
+        <div class="contact-content">
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Nom Complet</label>
+                        <input type="text" id="name" name="name" required>
                     </div>
-                </div>
-                <div class="testimonial-card">
-                    <p class="testimonial-text">
-                        L'environnement d'apprentissage unique de ORRYS m'a poussé à dépasser mes limites. Les projets collaboratifs et l'encadrement personnalisé ont façonné mon succès professionnel.
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">M</div>
-                        <div class="author-info">
-                            <h4>Manasssé AFOULA</h4>
-                            <p>Directeur Innovation, EuroTech</p>
-                        </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
                     </div>
-                </div>
-                <div class="testimonial-card">
-                    <p class="testimonial-text">
-                        Plus qu'une école, ORRYS est un catalyseur de talents. L'excellence académique combinée à une vision futuriste prépare vraiment aux défis de demain.
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">M</div>
-                        <div class="author-info">
-                            <h4>Manasssé AFOULA</h4>
-                            <p>Architecte IA, Google DeepMind</p>
-                        </div>
+                    <div class="form-group">
+                        <label for="phone">Téléphone</label>
+                        <input type="tel" id="phone" name="phone">
                     </div>
-                </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="cta-button">Envoyer</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h3>Informations de Contact</h3>
+                <p><strong>Adresse:</strong><br>
+                123 Diata<br>
+                Brazzaville, République du Congo</p>
+                
+                <p><strong>Téléphone:</strong><br>
+                +242 067571100</p>
+                
+                <p><strong>Email:</strong><br>
+                contact@ecole-excellence.cg</p>
+                
+                <p><strong>Horaires:</strong><br>
+                Lundi - Vendredi: 8h00 - 17h00<br>
+                Samedi: 9h00 - 13h00</p>
             </div>
         </div>
     </section>
-    <section id="gallery" class="gallery-section">
-  <div class="container">
-    <h2 class="section-title">Galerie</h2>
-    <div class="gallery-grid">
-      <div class="gallery-item">
-        <img src="images/img1.jpg" alt="Image 1" />
-        <p class="image-description">Description courte 1</p>
-      </div>
-      <div class="gallery-item">
-        <img src="images/img1.jpg" alt="Image 2" />
-        <p class="image-description">Description courte 2</p>
-      </div>
-      <div class="gallery-item">
-        <img src="images/img1.jpg" alt="Image 3" />
-        <p class="image-description">Description courte 3</p>
-      </div>
-      <div class="gallery-item">
-        <img src="images/img1.jpg" alt="Image 4" />
-        <p class="image-description">Description courte 4</p>
-      </div>
-      <!-- Ajoute autant d'images que tu veux -->
-    </div>
-  </div>
-</section>
-
-
-<!-- Bouton visite virtuelle -->
-<!-- <button id="openModalBtn" class="visit-virtual-btn">Visite Virtuelle</button> -->
-
-<!-- Modal -->
-<div id="videoModal" class="modal">
-  <div class="modal-content">
-    <span id="closeModalBtn" class="close">&times;</span>
-    <video controls width="100%" height="auto" autoplay>
-      <source src="URL_DE_TA_VIDEO.mp4" type="video/mp4" />
-      Votre navigateur ne supporte pas la lecture vidéo.
-    </video>
-  </div>
-</div>
-
 
     <!-- Footer -->
-    <footer id="contact" class="footer">
-        <div class="footer-container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>ORRYS Academy</h3>
-                    <p>Redéfinir l'éducation à travers l'innovation, l'excellence et une vision futuriste de l'apprentissage pour former les leaders de demain.</p>
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-x-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h3>Programmes</h3>
-                    <p><a href="#">Excellence Académique</a></p>
-                    <p><a href="#">Technologies Émergentes</a></p>
-                    <p><a href="#">Leadership International</a></p>
-                    <p><a href="#">Arts & Innovation</a></p>
-                </div>
-                <div class="footer-section">
-                    <h3>Campus</h3>
-                    <p><a href="#">Visite Virtuelle</a></p>
-                    <p><a href="#">Infrastructures</a></p>
-                    <p><a href="#">Vie Étudiante</a></p>
-                    <p><a href="#">Événements</a></p>
-                </div>
-                <div class="footer-section">
-                    <h3>Contact</h3>
-                    <p><i class="fa-solid fa-location-dot"></i> <br> Brazzaville, Congo</p>
-                    <p><i class="fa-solid fa-phone"></i> +242067571100</p>
-                    <p>✉️ contact@ORRYSacademy.com</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 ORRYS Academy. Tous droits réservés. | Excellence · Innovation · Futur</p>
-            </div>
-        </div>
+    <footer>
+        <p>&copy; 2025 École Excellence. Tous droits réservés.</p>
+        <p>Formation d'excellence pour un avenir professionnel réussi</p>
     </footer>
 
-   <script src="script.js"></script>
+    <!-- Gallery Modal -->
+    <div class="modal" id="galleryModal">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <div class="modal-caption" id="modalCaption"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
