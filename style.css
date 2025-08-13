@@ -540,12 +540,15 @@
 
 /* Modal Examens */
 .exam-modal {
-     height: 100%;
+     /* height: 100vh; */
     background: white;
     padding:2rem;
     border-radius: 8px;
     max-width: 600px;
     /* margin: auto; */
+    overflow: hidden auto;            /* scroll vertical si nécessaire */
+  -webkit-overflow-scrolling: touch;/* scroll fluide sur mobile */
+  margin: 6rem auto;  
     box-shadow: 0 5px 25px rgba(0,0,0,0.3);
 }
 
